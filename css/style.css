@@ -2,11 +2,20 @@
 -------------------- */
 
 :root {
-  --gray3: #b9bdcf;
+  --gray1: #333;
+  --gray2: #4f4f4f;
+  --gray3: #828282;
+  --gray4: #b9bdcf;
+  --gray6: #f2f2f2;
+  --blue: #2d9cdb;
+  --green: #27ae60;
+  --red: #eb5757;
 
   /* stylelint-disable value-keyword-case */
   --font-base: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-heebo: Heebo, sans-serif;
+  --font-poppins: Poppins, sans-serif;
   /* stylelint-enable value-keyword-case */
 }
 
@@ -35,6 +44,133 @@ a {
   margin: 0 auto;
 }
 
+.outside-container {
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.custom-email-input {
+  padding-right: 4px;
+  margin-top: 4px;
+  background-color: var(--gray6);
+  border-radius: 12px;
+}
+
+.custom-email-input input {
+  height: 100%;
+  padding: 16px 4px 16px 16px;
+  background-color: var(--gray6);
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.custom-email-input button {
+  padding: 8px 20px;
+  color: var(--gray6);
+  cursor: pointer;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 12px;
+}
+
+/* top header
+-------------------- */
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.top-header__site-title {
+  font-family: var(--font-heebo);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 53px;
+  color: var(--gray1);
+}
+
+.top-header__nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.top-header__nav-list li {
+  padding: 8px 0;
+  margin-right: 32px;
+  font-family: var(--font-poppins);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--gray1);
+}
+
+.top-header__nav-list li:last-child {
+  margin-right: 0;
+}
+
+/* hero header
+-------------------- */
+
+.hero-header__container {
+  max-width: 752px;
+  padding-left: 16%;
+}
+
+.hero-header__intro-text {
+  margin-top: 104px;
+  margin-top: 16px;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  color: var(--blue);
+}
+
+.hero-header__em-text {
+  display: block;
+  font-family: var(--font-poppins);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+  color: var(--gray1);
+}
+
+.hero-header__img-block {
+  margin: 42px auto;
+}
+
+.hero-header__img-block img {
+  border-radius: 18px;
+}
+
+.hero-header__description {
+  margin-top: 42px;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  color: var(--gray2);
+}
+
+.hero-header__label {
+  display: inline-block;
+  margin-top: 42px;
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--gray3);
+}
+
 /* footer
 -------------------- */
 
@@ -49,5 +185,5 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 17px;
-  color: var(--gray3);
+  color: var(--gray4);
 }
