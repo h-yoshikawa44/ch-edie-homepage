@@ -28,7 +28,7 @@
     <header class="top-header">
       <div class="outside-container top-header__layout">
         <h1 class="top-header__site-title">Edie</h1>
-        <nav>
+        <nav class="top-header__nav">
           <ul class="top-header__nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="">Services</a></li>
@@ -37,6 +37,13 @@
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
+        <button
+          id="open-menu-btn"
+          type="menu"
+          class="top-header__menu-btn top-header__open-menu-btn"
+        >
+          <span class="material-icons"> menu </span>
+        </button>
       </div>
     </header>
     <header class="hero-header">
@@ -173,16 +180,16 @@
     </section>
     <section class="team-section">
       <div class="inside-container team-section-layout">
-        <div class="team-section__text-block">
+        <div>
           <p class="team-section__mini-title">Meet the team</p>
-          <em class="section-title"
+          <em class="section-title team-section__title"
             >We are chilled <br />and a laidback <br />team
           </em>
           <p class="team-section__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.
           </p>
         </div>
-        <div class="team-section__img-list">
+        <div class="team-section__team-member-img-list">
           <img src="./images/person1.png" alt="" />
           <img src="./images/person2.png" alt="" />
           <img src="./images/person3.png" alt="" />
@@ -193,8 +200,8 @@
       <div class="inside-container">
         <figure class="client-quote-block">
           <blockquote>
-            Fast and outstanding resutls. Edie understands their customer’s
-            needs. They have a young and talented team.
+            Fast and outstanding resutls. Edie understands<wbr /> their
+            customer’s needs. They have a young and talented team.
           </blockquote>
           <figcaption class="client-quote-block__client">
             <p>
