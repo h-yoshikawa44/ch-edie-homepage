@@ -32,7 +32,8 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
-    "focus-visible": "^5.2.0"
+    "focus-visible": "^5.2.0",
+    "wicg-inert": "^3.1.1"
   },
   "volta": {
     "node": "16.13.0",

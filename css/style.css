@@ -66,6 +66,25 @@ a {
   background-color: var(--red);
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li a:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.3s;
+}
+
+.menu-btn {
+  display: inline-flex;
+  background-color: var(--white);
+  border: none;
+}
+
 .custom-input__label {
   display: inline-block;
   font-family: var(--font-poppins);
@@ -148,7 +167,6 @@ a {
 
 .top-header__nav-list {
   display: flex;
-  list-style: none;
 }
 
 .top-header__nav-list li {
@@ -164,17 +182,6 @@ a {
 
 .top-header__nav-list li:last-child {
   margin-right: 0;
-}
-
-.top-header__nav-list li a:hover {
-  text-decoration: underline;
-  transition: text-decoration 0.3s;
-}
-
-.top-header__menu-btn {
-  display: inline-flex;
-  background-color: var(--white);
-  border: none;
 }
 
 .top-header__open-menu-btn {
@@ -517,7 +524,6 @@ a {
 
 .footer .footer__nav-list {
   padding: 0;
-  list-style: none;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
@@ -535,11 +541,6 @@ a {
   font-style: normal;
   font-weight: normal;
   line-height: 36px;
-}
-
-.footer .footer__nav-list li a:hover {
-  text-decoration: underline;
-  transition: text-decoration 0.3s;
 }
 
 .footer .footer__site-title {
@@ -580,10 +581,79 @@ a {
   color: var(--gray4);
 }
 
+/* menu
+-------------------- */
+
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--white);
+}
+
+.menu-header {
+  margin-top: 12px;
+  text-align: right;
+}
+
+.menu-nav {
+  flex: 1;
+  margin-top: 50%;
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  text-align: center;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.menu-nav-list li {
+  margin-bottom: 32px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.menu-nav-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.menu-nav-list li a {
+  font-family: var(--font-poppins);
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--gray1);
+}
+
+.menu__open {
+  display: flex;
+  flex-direction: column;
+}
+
+/* tablet
+-------------------- */
+
+@media (max-width: 959px) {
+  /* top-header */
+
+  .top-header__nav {
+    display: none;
+  }
+
+  .top-header__open-menu-btn {
+    display: inline-flex;
+  }
+}
+
 /* mobile
 -------------------- */
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   /* common */
 
   .inside-container {
@@ -605,14 +675,6 @@ a {
   .top-header__site-title {
     font-size: 24px;
     line-height: 35px;
-  }
-
-  .top-header__nav {
-    display: none;
-  }
-
-  .top-header__open-menu-btn {
-    display: inline-flex;
   }
 
   /* hero header */
@@ -721,12 +783,19 @@ a {
   .team-section-layout {
     grid-template-columns: 1fr;
     row-gap: 32px;
-    margin: 0 -7%;
+  }
+
+  .team-section__text-block {
+    margin: 0 -8%;
   }
 
   .team-section .team-section__title {
     font-size: 36px;
     line-height: 54px;
+  }
+
+  .team-section__team-member-img-list {
+    margin: 0 -8%;
   }
 
   /* client section */
