@@ -3,12 +3,13 @@ import 'focus-visible';
 import 'wicg-inert';
 
 const contents = document.getElementById('contents');
+const menu = document.getElementById('menu');
 
 /**
  * メニューを開く
  */
 const openMenu = () => {
-  document.getElementById('menu').classList.add('menu__open');
+  menu.classList.add('menu--open');
   contents.setAttribute('inert', true);
   document.body.classList.add('overflow-hidden');
 };
@@ -17,7 +18,7 @@ const openMenu = () => {
  * メニューを閉じる
  */
 const closeMenu = () => {
-  document.getElementById('menu').classList.remove('menu__open');
+  menu.classList.remove('menu--open');
   contents.removeAttribute('inert', false);
   document.body.classList.remove('overflow-hidden');
 };

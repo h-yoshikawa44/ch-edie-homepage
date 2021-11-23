@@ -588,11 +588,13 @@ a {
   position: fixed;
   inset: 0;
   z-index: 1200;
-  display: none;
   width: 100%;
   height: 100%;
   overflow-y: auto;
+  visibility: hidden;
   background-color: var(--white);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s ease 1s;
 }
 
 .menu-header {
@@ -629,8 +631,10 @@ a {
   color: var(--gray1);
 }
 
-.menu__open {
-  display: block;
+.menu--open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 /* tablet
