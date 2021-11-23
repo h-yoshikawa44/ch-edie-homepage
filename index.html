@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Checkout Page</title>
+    <title>Edie homepage</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
 
     <!-- CSS -->
@@ -13,19 +13,285 @@
       rel="stylesheet"
       href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
     />
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-    /> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
-    /> -->
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="contents">
+      <header id="top-header" class="top-header">
+        <div class="outside-container top-header__layout">
+          <h1 class="top-header__site-title">Edie</h1>
+          <nav id="top-header-nav" class="top-header__nav">
+            <ul class="nav-list top-header__nav-list">
+              <li><a href="#top-header">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#our-works">Our Works</a></li>
+              <li><a href="#clients">Clients</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            id="open-menu-btn"
+            type="button"
+            class="menu-btn top-header__open-menu-btn"
+          >
+            <span class="material-icons"> menu </span>
+          </button>
+        </div>
+      </header>
+      <header class="hero-header">
+        <div class="hero-header__container">
+          <p class="hero-header__intro-text">Unhappy with your website?</p>
+          <em class="hero-header__em-text">
+            We create beautiful <br />and fast web services
+          </em>
+          <p class="hero-header__img-block">
+            <img src="./images/heroImage.jpg" alt="" />
+          </p>
+          <em class="hero-header__em-text">Story, emotion <br />and purpose</em>
+          <p class="hero-header__description">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <label class="custom-input__label">
+            Want us to contact you?
+            <div class="custom-email-input">
+              <input type="email" autocomplete="email" placeholder="Email" />
+              <button class="bg-blue" type="button">Join</button>
+            </div>
+          </label>
+        </div>
+      </header>
+      <section id="services" class="service-section">
+        <div class="inside-container">
+          <h2 class="section-title">
+            We offer high <br />
+            demand services
+          </h2>
+        </div>
+        <div class="inside-container sm-outside-container">
+          <div class="service-section__service-card-list">
+            <div class="service-card-list__card">
+              <span class="material-icons bg-blue service-card-list__card-icon">
+                edit
+              </span>
+              <h4 class="service-card-list__card-title">UI/UX Design</h4>
+              <p class="service-card-list__card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a
+                class="
+                  service-card-list__card-link
+                  service-card-list__card-link--inactive
+                "
+              >
+                Get started
+              </a>
+            </div>
+            <div
+              class="service-card-list__card service-card-list__card--active"
+            >
+              <span
+                class="material-icons bg-green service-card-list__card-icon"
+              >
+                code
+              </span>
+              <h4 class="service-card-list__card-title">Front End</h4>
+              <p class="service-card-list__card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a class="service-card-list__card-link" href="# ">
+                Get started
+              </a>
+            </div>
+            <div class="service-card-list__card">
+              <span class="material-icons bg-red service-card-list__card-icon">
+                storage
+              </span>
+              <h4 class="service-card-list__card-title">Back End</h4>
+              <p class="service-card-list__card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a
+                class="
+                  service-card-list__card-link
+                  service-card-list__card-link--inactive
+                "
+              >
+                Get started
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-works" class="works-section">
+        <div class="inside-container">
+          <h2 class="section-title">
+            Good design means <br />
+            good business
+          </h2>
+        </div>
+        <div class="inside-container sm-outside-container">
+          <div class="work-section__work-card-list">
+            <figure class="work-card-list__card">
+              <img
+                src="./images/smarthome.jpg"
+                alt="Smart home dashboard Image"
+              />
+              <figcaption>
+                <i class="work-card-list__card-category"
+                  >Full stack application</i
+                >
+                <h4 class="work-card-list__card-title">Smart home dashboard</h4>
+              </figcaption>
+            </figure>
+            <figure class="work-card-list__card">
+              <img src="./images/onboard.png" alt="Onboard application Image" />
+              <figcaption>
+                <i class="work-card-list__card-category">UX/UI design</i>
+                <h4 class="work-card-list__card-title">Onboard application</h4>
+              </figcaption>
+            </figure>
+            <figure class="work-card-list__card">
+              <img src="./images/booking.png" alt="Booking system Image" />
+              <figcaption>
+                <i class="work-card-list__card-category">Mobile application</i>
+                <h4 class="work-card-list__card-title">Booking system</h4>
+              </figcaption>
+            </figure>
+            <figure class="work-card-list__card">
+              <img
+                src="./images/juice-product.png"
+                alt="Juice product homepage Image"
+              />
+              <figcaption>
+                <i class="work-card-list__card-category"
+                  >Front End applicati on</i
+                >
+                <h4 class="work-card-list__card-title">
+                  Juice product homepage
+                </h4>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="works-section__more-block">
+            <a class="works-section__more" href="#">see more →</a>
+          </div>
+        </div>
+      </section>
+      <section class="team-section">
+        <div class="inside-container sm-outside-container">
+          <div class="team-section-layout">
+            <div>
+              <p class="team-section__mini-title">Meet the team</p>
+              <em class="section-title team-section__title"
+                >We are chilled <br />and a laidback <br />team
+              </em>
+              <p class="team-section__description">
+                Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.
+              </p>
+            </div>
+            <div class="team-section__team-member-img-list">
+              <img src="./images/person1.png" alt="" />
+              <img src="./images/person2.png" alt="" />
+              <img src="./images/person3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="clients" class="cilent-section">
+        <div class="inside-container sm-outside-container">
+          <figure class="client-quote-block">
+            <blockquote>
+              Fast and outstanding resutls. Edie understands<wbr /> their
+              customer’s needs. They have a young and talented team.
+            </blockquote>
+            <figcaption class="client-quote-block__client">
+              <p>
+                <img
+                  class="client-quote-block__client-img"
+                  src="./images/person4.png"
+                  alt="Carlos Tran Image"
+                />
+              </p>
+              <div>
+                <p class="client-quote-block__client-name">Carlos Tran</p>
+                <small class="client-quote-block__client-role"
+                  >The Decorate Gatsby</small
+                >
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <footer id="footer" class="footer">
+        <div class="inside-container footer-layout">
+          <nav id="footer-nav">
+            <ul class="nav-list footer__nav-list">
+              <li><a href="#top-header">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#our-works">Our Works</a></li>
+              <li><a href="#clients">Clients</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <p class="footer__site-title">Edie</p>
+            <div class="footer__social">
+              <a href="#">
+                <img src="./icons/instagram.svg" alt="Instagram Account Link" />
+              </a>
+              <a href="#">
+                <img src="./icons/linkedin.svg" alt="Linkedin Account Link" />
+              </a>
+              <a href="#">
+                <img src="./icons/twitter.svg" alt="Twitter Account Link" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <label class="custom-input__label">
+              Want us to contact you?
+              <div class="custom-email-input">
+                <input type="email" autocomplete="email" placeholder="Email" />
+                <button class="bg-blue" type="button">Join</button>
+              </div>
+            </label>
+          </div>
+        </div>
+        <small class="footer__signature">
+          created by h-yoshikawa44 - devChallenges.io
+        </small>
+      </footer>
+    </div>
+    <div id="menu" class="outside-container menu menu--close">
+      <div class="menu-header">
+        <button id="close-menu-btn" type="button" class="menu-btn">
+          <span class="material-icons"> close </span>
+        </button>
+      </div>
+      <nav id="menu-nav" class="menu-nav">
+        <ul id="menu-nav-list" class="nav-list menu-nav-list">
+          <li><a href="#top-header">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#our-works">Our Works</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>
