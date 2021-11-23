@@ -3,18 +3,58 @@ import 'focus-visible';
 import 'wicg-inert';
 
 const contents = document.getElementById('contents');
-document.body.classList;
 
-const menuOpenBtn = document.getElementById('open-menu-btn');
-menuOpenBtn.addEventListener('click', () => {
+/**
+ * メニューを開く
+ */
+const openMenu = () => {
   document.getElementById('menu').classList.add('menu__open');
   contents.setAttribute('inert', true);
   document.body.classList.add('overflow-hidden');
-});
+};
 
-const menuCloseBtn = document.getElementById('close-menu-btn');
-menuCloseBtn.addEventListener('click', () => {
+/**
+ * メニューを閉じる
+ */
+const closeMenu = () => {
   document.getElementById('menu').classList.remove('menu__open');
   contents.removeAttribute('inert', false);
   document.body.classList.remove('overflow-hidden');
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+  // ページ内リンクスクロール
+  const anchorLinks = document.querySelectorAll(
+    'nav#top-header-nav a[href^="#"], nav#footer-nav a[href^="#"]'
+  );
+  const anchorLinkList = Array.prototype.slice.call(anchorLinks);
+
+  anchorLinkList.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.hash;
+      const targetElement = document.querySelector(targetId);
+      const targetOffsetTop =
+        window.pageYOffset + targetElement.getBoundingClientRect().top;
+      window.scrollTo({
+        top: targetOffsetTop,
+        behavior: 'smooth',
+      });
+    });
+  });
+
+  // メニュー開閉
+  const menuOpenBtn = document.getElementById('open-menu-btn');
+  menuOpenBtn.addEventListener('click', openMenu);
+
+  const menuCloseBtn = document.getElementById('close-menu-btn');
+  menuCloseBtn.addEventListener('click', closeMenu);
+
+  // メニューナビゲーションリンク
+  const menuLinks = document.querySelectorAll('nav.menu-nav a[href^="#"]');
+  const menuLinkList = Array.prototype.slice.call(menuLinks);
+
+  menuLinkList.forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
 });
