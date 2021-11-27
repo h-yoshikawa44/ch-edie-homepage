@@ -44,6 +44,17 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // メール送信フォーム（ダミー）
+  const emailForms = document.querySelectorAll('form.js-join-form');
+  const emailFormList = Array.prototype.slice.call(emailForms);
+
+  emailFormList.forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('メール送信（実際に送信はしていません）');
+    });
+  });
+
   // メニュー開閉
   const menuOpenBtn = document.getElementById('open-menu-btn');
   menuOpenBtn.addEventListener('click', openMenu);
@@ -52,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
   menuCloseBtn.addEventListener('click', closeMenu);
 
   // メニューナビゲーションリンク
-  const menuLinks = document.querySelectorAll('nav.menu-nav a[href^="#"]');
+  const menuLinks = document.querySelectorAll('nav#menu-nav a[href^="#"]');
   const menuLinkList = Array.prototype.slice.call(menuLinks);
 
   menuLinkList.forEach((link) => {
