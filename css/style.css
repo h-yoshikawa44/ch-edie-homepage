@@ -39,6 +39,11 @@ a {
   box-sizing: border-box;
 }
 
+/* load ※Chromeのページ初期読み込み時のtransition抑制対応 */
+.js-preload * {
+  transition: none !important;
+}
+
 /* common
 -------------------- */
 
