@@ -59,8 +59,8 @@ menu
 - [HTML](https://developer.mozilla.org/ja/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/ja/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript)
-- [Node.js](https://nodejs.org/)：16.13.0
-- [Vite](https://ja.vitejs.dev/)：2.6.4
+- [Node.js](https://nodejs.org/)：18.17.1
+- [Vite](https://ja.vitejs.dev/)：4.4.9
 
 Other major libraries
 - [material-design-icons](https://google.github.io/material-design-icons/)
@@ -81,19 +81,19 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 <!-- Example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com/)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](https://www.npmjs.com/)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/h-yoshikawa44/ch-edie-homepage.git
+git clone https://github.com/h-yoshikawa44/ch-edie-homepage.git
 or
-$ git clone git@github.com:h-yoshikawa44/ch-edie-homepage.git
+git clone git@github.com:h-yoshikawa44/ch-edie-homepage.git
 
 # Install dependencies
-$ yarn install
+npm install
 
 # Run the Vite
-$ yarn dev
+npm run dev
 ```
 
 ## learned/improved
