@@ -26,7 +26,7 @@ const closeMenu = () => {
 window.addEventListener('DOMContentLoaded', () => {
   // ページ内リンクスクロール
   const anchorLinks = document.querySelectorAll(
-    'nav#top-header-nav a[href^="#"], nav#footer-nav a[href^="#"]'
+    'nav#top-header-nav a[href^="#"], nav#footer-nav a[href^="#"]',
   );
   const anchorLinkList = Array.prototype.slice.call(anchorLinks);
 
