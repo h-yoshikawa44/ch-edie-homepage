@@ -43,7 +43,8 @@
     "npm": "9.6.7"
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx lint-staged",
+    "prepare-commit-msg": "./.githooks/prepare-commit-msg \"$@\""
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [
