@@ -60,7 +60,7 @@ menu
 - [CSS](https://developer.mozilla.org/ja/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript)
 - [Node.js](https://nodejs.org/)：18.17.1
-- [Vite](https://ja.vitejs.dev/)：2.6.4
+- [Vite](https://ja.vitejs.dev/)：4.4.9
 
 Other major libraries
 - [material-design-icons](https://google.github.io/material-design-icons/)
