@@ -7,15 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint-check": "yarn lint:eslint && yarn lint:stylelint && yarn check:prettier",
+    "lint-check": "npm run lint:eslint & npm run lint:stylelint && npm run check:prettier",
     "lint:eslint": "eslint \"./js/**/*.js\"",
     "lint:stylelint": "stylelint \"./css/**/*.css\"",
     "check:prettier": "prettier --check \"./**/*.{html,js,ts,json}\"",
-    "fix": "yarn fix:eslint && yarn fix:stylelint && yarn fix:prettier",
-    "fix:eslint": "yarn lint:eslint --fix",
-    "fix:stylelint": "yarn lint:stylelint --fix",
-    "fix:prettier": "yarn check:prettier --write",
-    "deploy": "yarn build && gh-pages -d dist",
+    "fix": "npm run fix:eslint && npm run fix:stylelint && npm run fix:prettier",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix:stylelint": "npm run lint:stylelint -- --fix",
+    "fix:prettier": "npm run check:prettier -- --write",
+    "deploy": "npm run build && gh-pages -d dist",
     "prepare": "simple-git-hooks || echo 'Can not set git hooks'"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "yarn": "1.22.17"
   },
   "simple-git-hooks": {
-    "pre-commit": "yarn run -s lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [
