@@ -19,7 +19,7 @@
     "prepare": "simple-git-hooks || echo 'Can not set git hooks'"
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
+    "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "gh-pages": "^3.2.3",
     "lint-staged": "^12.0.3",
