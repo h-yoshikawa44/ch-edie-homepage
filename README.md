@@ -64,8 +64,8 @@ menu
 
 Other major libraries
 - [material-design-icons](https://google.github.io/material-design-icons/)
-- [focus-visible](https://github.com/WICG/focus-visible)
 - [wicg-inert](https://github.com/WICG/inert)
+- [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
 
 ## Features
 
