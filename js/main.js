@@ -1,5 +1,4 @@
 import '../css/style.css';
-import 'focus-visible';
 import 'wicg-inert';
 
 const contents = document.getElementById('contents');

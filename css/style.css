@@ -136,7 +136,7 @@ a {
   transition: background-color 0.3s;
 }
 
-.custom-email-input button:not(.focus-visible) {
+.custom-email-input button:not(:focus-visible) {
   outline-color: transparent;
 }
 
@@ -600,7 +600,10 @@ a {
   visibility: hidden;
   background-color: var(--white);
   opacity: 0;
-  transition: opacity 0.3s, visibility 0.3s ease 0.3s, transform 0.3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s ease 0.3s,
+    transform 0.3s;
   transform: translateX(100%);
 }
 
