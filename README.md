@@ -59,7 +59,7 @@ menu
 - [HTML](https://developer.mozilla.org/ja/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/ja/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript)
-- [Node.js](https://nodejs.org/)：18.17.1
+- [Node.js](https://nodejs.org/)：22.13.1
 - [Vite](https://ja.vitejs.dev/)：4.4.9
 
 Other major libraries
