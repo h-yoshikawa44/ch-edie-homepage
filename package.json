@@ -18,6 +18,9 @@
     "deploy": "npm run build && gh-pages -d dist",
     "prepare": "simple-git-hooks || echo 'Can not set git hooks'"
   },
+  "dependencies": {
+    "wicg-inert": "^3.1.3"
+  },
   "devDependencies": {
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
@@ -32,9 +35,6 @@
     "stylelint-config-standard": "^34.0.0",
     "stylelint-order": "^6.0.3",
     "vite": "^4.4.9"
-  },
-  "dependencies": {
-    "wicg-inert": "^3.1.1"
   },
   "volta": {
     "node": "22.13.1"
