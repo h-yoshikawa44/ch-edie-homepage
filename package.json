@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://h-yoshikawa44.github.io/ch-edie-homepage/",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,51 +11,32 @@
     "lint-check": "npm run lint:eslint & npm run lint:stylelint && npm run check:prettier",
     "lint:eslint": "eslint \"./js/**/*.js\"",
     "lint:stylelint": "stylelint \"./css/**/*.css\"",
-    "check:prettier": "prettier --check \"./**/*.{html,js,ts,json}\"",
+    "check:prettier": "prettier --check \"./**/*.{html,json,yml}\"",
     "fix": "npm run fix:eslint && npm run fix:stylelint && npm run fix:prettier",
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:stylelint": "npm run lint:stylelint -- --fix",
     "fix:prettier": "npm run check:prettier -- --write",
     "deploy": "npm run build && gh-pages -d dist",
-    "prepare": "simple-git-hooks || echo 'Can not set git hooks'"
-  },
-  "devDependencies": {
-    "eslint": "^8.49.0",
-    "eslint-config-prettier": "^9.0.0",
-    "gh-pages": "^3.2.3",
-    "lint-staged": "^14.0.1",
-    "postcss": "^8.4.29",
-    "postcss-preset-env": "^9.1.3",
-    "prettier": "^3.0.3",
-    "simple-git-hooks": "^2.9.0",
-    "stylelint": "^15.10.3",
-    "stylelint-config-recess-order": "^4.3.0",
-    "stylelint-config-standard": "^34.0.0",
-    "stylelint-order": "^6.0.3",
-    "vite": "^4.4.9"
+    "prepare": "lefthook install || echo 'Can not set git hooks'"
   },
   "dependencies": {
-    "focus-visible": "^5.2.0",
-    "wicg-inert": "^3.1.1"
+    "wicg-inert": "^3.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.0",
+    "gh-pages": "^6.3.0",
+    "lefthook": "^1.10.10",
+    "neostandard": "^0.12.1",
+    "postcss": "^8.5.2",
+    "postcss-preset-env": "^10.1.3",
+    "prettier": "^3.5.0",
+    "stylelint": "^16.14.1",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-order": "^6.0.4",
+    "vite": "^6.1.0"
   },
   "volta": {
-    "node": "18.17.1",
-    "npm": "9.6.7"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged",
-    "prepare-commit-msg": "./.githooks/prepare-commit-msg \"$@\""
-  },
-  "lint-staged": {
-    "src/**/*.{js,ts}": [
-      "prettier --write --loglevel=error",
-      "eslint --fix --quiet"
-    ],
-    "css/**/*.css": [
-      "stylelint --fix --quiet"
-    ],
-    "./**/*.{html,json}": [
-      "prettier --write --loglevel=error"
-    ]
+    "node": "22.13.1"
   }
 }
