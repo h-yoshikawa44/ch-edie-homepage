@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://h-yoshikawa44.github.io/ch-edie-homepage/",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
