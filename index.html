@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,28 +14,28 @@
 
     <!-- CSS -->
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&amp;family=Montserrat:ital,wght@0,700;1,700&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/ch-edie-homepage/assets/index-DgFI8Cri.js"></script>
-    <link rel="stylesheet" crossorigin href="/ch-edie-homepage/assets/index-D3VB7B8y.css">
+    <script type="module" crossorigin src="/ch-edie-homepage/assets/index-CC52RNAc.js"></script>
+    <link rel="stylesheet" crossorigin href="/ch-edie-homepage/assets/index-DaRDZfSx.css">
   </head>
   <body class="js-preload">
     <div id="contents">
       <header id="top-header" class="top-header">
         <div class="outside-container top-header__layout">
           <h1 class="top-header__site-title">Edie</h1>
-          <nav id="top-header-nav" class="top-header__nav">
+          <nav
+            id="top-header-nav"
+            class="top-header__nav"
+            aria-label="top-header-nav"
+          >
             <ul class="nav-list top-header__nav-list">
               <li><a href="#top-header">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -53,17 +53,22 @@
           </button>
         </div>
       </header>
-      <header class="hero-header">
-        <div class="hero-header__container">
-          <p class="hero-header__intro-text">Unhappy with your website?</p>
-          <em class="hero-header__em-text">
+      <div class="hero">
+        <div class="hero__container">
+          <p class="hero__intro-text">Unhappy with your website?</p>
+          <em class="hero__em-text">
             We create beautiful <br />and fast web services
           </em>
-          <p class="hero-header__img-block">
-            <img src="/ch-edie-homepage/assets/heroImage--qxxkYWn.jpg" alt="" />
+          <p class="hero__img-block">
+            <img
+              src="/ch-edie-homepage/assets/heroImage--qxxkYWn.jpg"
+              alt=""
+              width="1332"
+              height="354"
+            />
           </p>
-          <em class="hero-header__em-text">Story, emotion <br />and purpose</em>
-          <p class="hero-header__description">
+          <em class="hero__em-text">Story, emotion <br />and purpose</em>
+          <p class="hero__description">
             We help transform your ideas into real world applications that will
             outperform your toughest competition and help you achieve your
             strategic goals in short period of time.
@@ -71,7 +76,7 @@
           <form class="js-join-form" action="#">
             <label class="custom-input__label">
               Want us to contact you?
-              <div class="custom-email-input">
+              <span class="custom-email-input">
                 <input
                   name="email"
                   type="email"
@@ -79,11 +84,11 @@
                   placeholder="Email"
                 />
                 <button class="bg-blue" type="submit">Join</button>
-              </div>
+              </span>
             </label>
           </form>
         </div>
-      </header>
+      </div>
       <section id="services" class="service-section">
         <div class="inside-container">
           <h2 class="section-title">
@@ -97,7 +102,7 @@
               <span class="material-icons bg-blue service-card-list__card-icon">
                 edit
               </span>
-              <h4 class="service-card-list__card-title">UI/UX Design</h4>
+              <h3 class="service-card-list__card-title">UI/UX Design</h3>
               <p class="service-card-list__card-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
                 metus ac nulla consequat aliquet id quis turpis.
@@ -116,20 +121,18 @@
               >
                 code
               </span>
-              <h4 class="service-card-list__card-title">Front End</h4>
+              <h3 class="service-card-list__card-title">Front End</h3>
               <p class="service-card-list__card-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
                 metus ac nulla consequat aliquet id quis turpis.
               </p>
-              <a class="service-card-list__card-link" href="# ">
-                Get started
-              </a>
+              <a class="service-card-list__card-link" href="#"> Get started </a>
             </div>
             <div class="service-card-list__card">
               <span class="material-icons bg-red service-card-list__card-icon">
                 storage
               </span>
-              <h4 class="service-card-list__card-title">Back End</h4>
+              <h3 class="service-card-list__card-title">Back End</h3>
               <p class="service-card-list__card-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
                 metus ac nulla consequat aliquet id quis turpis.
@@ -156,23 +159,35 @@
               <img
                 src="/ch-edie-homepage/assets/smarthome-CyAKX7YD.jpg"
                 alt="Smart home dashboard Image"
+                width="534"
+                height="534"
               />
               <figcaption>
-                <i class="work-card-list__card-category"
-                  >Full stack application</i
-                >
-                <h4 class="work-card-list__card-title">Smart home dashboard</h4>
+                <i class="work-card-list__card-category">
+                  Full stack application
+                </i>
+                <h3 class="work-card-list__card-title">Smart home dashboard</h3>
               </figcaption>
             </figure>
             <figure class="work-card-list__card">
-              <img src="/ch-edie-homepage/assets/onboard-qL2FaIZN.png" alt="Onboard application Image" />
+              <img
+                src="/ch-edie-homepage/assets/onboard-qL2FaIZN.png"
+                alt="Onboard application Image"
+                width="545"
+                height="545"
+              />
               <figcaption>
                 <i class="work-card-list__card-category">UX/UI design</i>
                 <h4 class="work-card-list__card-title">Onboard application</h4>
               </figcaption>
             </figure>
             <figure class="work-card-list__card">
-              <img src="/ch-edie-homepage/assets/booking-ZSQZlylR.png" alt="Booking system Image" />
+              <img
+                src="/ch-edie-homepage/assets/booking-ZSQZlylR.png"
+                alt="Booking system Image"
+                width="534"
+                height="551"
+              />
               <figcaption>
                 <i class="work-card-list__card-category">Mobile application</i>
                 <h4 class="work-card-list__card-title">Booking system</h4>
@@ -182,11 +197,13 @@
               <img
                 src="/ch-edie-homepage/assets/juice-product-BuQEBuQB.png"
                 alt="Juice product homepage Image"
+                width="545"
+                height="546"
               />
               <figcaption>
-                <i class="work-card-list__card-category"
-                  >Front End applicati on</i
-                >
+                <i class="work-card-list__card-category">
+                  Front End applicati on
+                </i>
                 <h4 class="work-card-list__card-title">
                   Juice product homepage
                 </h4>
@@ -211,9 +228,30 @@
               </p>
             </div>
             <div class="team-section__team-member-img-list">
-              <p><img src="/ch-edie-homepage/assets/person1-7KESw2Dg.png" alt="" /></p>
-              <p><img src="/ch-edie-homepage/assets/person2-DqFvgP23.png" alt="" /></p>
-              <p><img src="/ch-edie-homepage/assets/person3-DtyRghHZ.png" alt="" /></p>
+              <p>
+                <img
+                  src="/ch-edie-homepage/assets/person1-7KESw2Dg.png"
+                  alt=""
+                  width="260"
+                  height="260"
+                />
+              </p>
+              <p>
+                <img
+                  src="/ch-edie-homepage/assets/person2-DqFvgP23.png"
+                  alt=""
+                  width="292"
+                  height="300"
+                />
+              </p>
+              <p>
+                <img
+                  src="/ch-edie-homepage/assets/person3-DtyRghHZ.png"
+                  alt=""
+                  width="320"
+                  height="320"
+                />
+              </p>
             </div>
           </div>
         </div>
@@ -231,13 +269,15 @@
                   class="client-quote-block__client-img"
                   src="/ch-edie-homepage/assets/person4-Do7ITsqg.png"
                   alt="Carlos Tran Image"
+                  width="246"
+                  height="246"
                 />
               </p>
               <div>
                 <p class="client-quote-block__client-name">Carlos Tran</p>
-                <small class="client-quote-block__client-role"
-                  >The Decorate Gatsby</small
-                >
+                <small class="client-quote-block__client-role">
+                  The Decorate Gatsby
+                </small>
               </div>
             </figcaption>
           </figure>
@@ -245,7 +285,7 @@
       </section>
       <footer id="footer" class="footer">
         <div class="inside-container footer-layout">
-          <nav id="footer-nav">
+          <nav id="footer-nav" aria-label="footer-nav">
             <ul class="nav-list footer__nav-list">
               <li><a href="#top-header">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -258,13 +298,28 @@
             <p class="footer__site-title">Edie</p>
             <div class="footer__social">
               <a href="#">
-                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0)'%3e%3cpath%20d='M23.0949%201.9064C22.4907%201.30204%2021.7667%201%2020.9232%201H3.07926C2.23547%201%201.51164%201.30215%200.907288%201.9064C0.303041%202.51048%200.000999451%203.23442%200.000999451%204.07804V21.9218C0.000999451%2022.7653%200.302986%2023.4894%200.907288%2024.0935C1.51164%2024.6977%202.23563%2025%203.07926%2025H20.923C21.7663%2025%2022.4906%2024.6977%2023.0948%2024.0935C23.6991%2023.4894%2024.0009%2022.7653%2024.0009%2021.9218V4.07804C24.0008%203.23425%2023.6991%202.5107%2023.0949%201.9064ZM8.61845%209.64832C9.56108%208.737%2010.6939%208.28112%2012.0169%208.28112C13.35%208.28112%2014.488%208.737%2015.4308%209.64832C16.3737%2010.5598%2016.8448%2011.6615%2016.8448%2012.9531C16.8448%2014.2446%2016.3737%2015.3463%2015.4308%2016.2575C14.488%2017.1692%2013.3504%2017.625%2012.0169%2017.625C10.694%2017.625%209.56124%2017.1688%208.61845%2016.2575C7.67561%2015.3462%207.20424%2014.2446%207.20424%2012.9531C7.20424%2011.6615%207.67561%2010.5599%208.61845%209.64832ZM21.2826%2021.2814C21.2826%2021.5521%2021.1885%2021.7785%2021.0012%2021.9609C20.8133%2022.1432%2020.5897%2022.2343%2020.3291%2022.2343H3.62621C3.35541%2022.2343%203.12868%2022.1432%202.94655%2021.9609C2.76414%2021.7789%202.67302%2021.5521%202.67302%2021.2814V11.1561H4.87607C4.66784%2011.8124%204.56369%2012.4948%204.56369%2013.203C4.56369%2015.2034%205.29277%2016.9089%206.75109%2018.3206C8.20958%2019.7318%209.96475%2020.4377%2012.0168%2020.4377C13.371%2020.4377%2014.6209%2020.1147%2015.7671%2019.4689C16.913%2018.8227%2017.8186%2017.9453%2018.4858%2016.8359C19.1525%2015.7264%2019.4859%2014.5154%2019.4859%2013.203C19.4859%2012.4949%2019.3813%2011.8126%2019.1731%2011.1561H21.2827V21.2815H21.2826V21.2814ZM21.2826%207.32793C21.2826%207.63002%2021.1784%207.88527%2020.9697%208.09357C20.7615%208.30202%2020.5064%208.40611%2020.2042%208.40611H17.4855C17.1836%208.40611%2016.9281%208.30197%2016.7199%208.09357C16.5116%207.88527%2016.4075%207.63002%2016.4075%207.32793V4.75004C16.4075%204.45834%2016.5116%204.20578%2016.7199%203.99217C16.9282%203.77868%2017.1836%203.6718%2017.4855%203.6718H20.2042C20.5064%203.6718%2020.7616%203.77863%2020.9697%203.99217C21.1784%204.20578%2021.2826%204.45834%2021.2826%204.75004V7.32793Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="Instagram Account Link" />
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0)'%3e%3cpath%20d='M23.0949%201.9064C22.4907%201.30204%2021.7667%201%2020.9232%201H3.07926C2.23547%201%201.51164%201.30215%200.907288%201.9064C0.303041%202.51048%200.000999451%203.23442%200.000999451%204.07804V21.9218C0.000999451%2022.7653%200.302986%2023.4894%200.907288%2024.0935C1.51164%2024.6977%202.23563%2025%203.07926%2025H20.923C21.7663%2025%2022.4906%2024.6977%2023.0948%2024.0935C23.6991%2023.4894%2024.0009%2022.7653%2024.0009%2021.9218V4.07804C24.0008%203.23425%2023.6991%202.5107%2023.0949%201.9064ZM8.61845%209.64832C9.56108%208.737%2010.6939%208.28112%2012.0169%208.28112C13.35%208.28112%2014.488%208.737%2015.4308%209.64832C16.3737%2010.5598%2016.8448%2011.6615%2016.8448%2012.9531C16.8448%2014.2446%2016.3737%2015.3463%2015.4308%2016.2575C14.488%2017.1692%2013.3504%2017.625%2012.0169%2017.625C10.694%2017.625%209.56124%2017.1688%208.61845%2016.2575C7.67561%2015.3462%207.20424%2014.2446%207.20424%2012.9531C7.20424%2011.6615%207.67561%2010.5599%208.61845%209.64832ZM21.2826%2021.2814C21.2826%2021.5521%2021.1885%2021.7785%2021.0012%2021.9609C20.8133%2022.1432%2020.5897%2022.2343%2020.3291%2022.2343H3.62621C3.35541%2022.2343%203.12868%2022.1432%202.94655%2021.9609C2.76414%2021.7789%202.67302%2021.5521%202.67302%2021.2814V11.1561H4.87607C4.66784%2011.8124%204.56369%2012.4948%204.56369%2013.203C4.56369%2015.2034%205.29277%2016.9089%206.75109%2018.3206C8.20958%2019.7318%209.96475%2020.4377%2012.0168%2020.4377C13.371%2020.4377%2014.6209%2020.1147%2015.7671%2019.4689C16.913%2018.8227%2017.8186%2017.9453%2018.4858%2016.8359C19.1525%2015.7264%2019.4859%2014.5154%2019.4859%2013.203C19.4859%2012.4949%2019.3813%2011.8126%2019.1731%2011.1561H21.2827V21.2815H21.2826V21.2814ZM21.2826%207.32793C21.2826%207.63002%2021.1784%207.88527%2020.9697%208.09357C20.7615%208.30202%2020.5064%208.40611%2020.2042%208.40611H17.4855C17.1836%208.40611%2016.9281%208.30197%2016.7199%208.09357C16.5116%207.88527%2016.4075%207.63002%2016.4075%207.32793V4.75004C16.4075%204.45834%2016.5116%204.20578%2016.7199%203.99217C16.9282%203.77868%2017.1836%203.6718%2017.4855%203.6718H20.2042C20.5064%203.6718%2020.7616%203.77863%2020.9697%203.99217C21.1784%204.20578%2021.2826%204.45834%2021.2826%204.75004V7.32793Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt="Instagram Account Link"
+                  width="24"
+                  height="24"
+                />
               </a>
               <a href="#">
-                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0)'%3e%3cpath%20d='M22.6796%202.32019C21.7998%201.44012%2020.7397%201%2019.5002%201H4.50013C3.26066%201%202.20059%201.44012%201.32035%202.32019C0.440277%203.20043%200.00015831%204.26044%200.00015831%205.49997V20.4999C0.00015831%2021.7393%200.440277%2022.7994%201.32035%2023.6797C2.20059%2024.5599%203.26066%2025%204.50013%2025H19.5001C20.7395%2025%2021.7996%2024.5599%2022.6795%2023.6797C23.5597%2022.7994%2023.9998%2021.7394%2023.9998%2020.4999V5.49997C23.9998%204.26044%2023.5596%203.20026%2022.6796%202.32019ZM7.31257%2021.0936H3.70319V10.2498H7.31257V21.0936ZM6.98465%208.2422C6.60971%208.60159%206.11486%208.78132%205.50022%208.78132H5.48446C4.89077%208.78132%204.40917%208.60159%204.03927%208.2422C3.66931%207.8828%203.48444%207.43754%203.48444%206.9063C3.48444%206.36466%203.67467%205.91666%204.05476%205.56241C4.43511%205.20827%204.92722%205.03112%205.5313%205.03112C6.13544%205.03112%206.61983%205.20827%206.98448%205.56241C7.34902%205.91666%207.53657%206.36466%207.54692%206.9063C7.54686%207.43732%207.35959%207.88258%206.98465%208.2422ZM20.297%2021.0936H16.6876V15.2968C16.6876%2013.6616%2016.0836%2012.8438%2014.8752%2012.8438C14.4169%2012.8438%2014.0313%2012.9714%2013.7189%2013.2266C13.4062%2013.4817%2013.1719%2013.7916%2013.0158%2014.1565C12.9428%2014.3438%2012.9064%2014.6354%2012.9064%2015.0311V21.0935H9.29705C9.3283%2014.552%209.3283%2010.9373%209.29705%2010.2497H12.9064V11.7807C13.6653%2010.5941%2014.743%209.99961%2016.1409%209.99961C17.3909%209.99961%2018.3962%2010.4112%2019.1566%2011.2339C19.917%2012.0569%2020.2972%2013.2706%2020.2972%2014.8743V21.0936H20.297Z'%20fill='%23F2F2F2'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="Linkedin Account Link" />
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0)'%3e%3cpath%20d='M22.6796%202.32019C21.7998%201.44012%2020.7397%201%2019.5002%201H4.50013C3.26066%201%202.20059%201.44012%201.32035%202.32019C0.440277%203.20043%200.00015831%204.26044%200.00015831%205.49997V20.4999C0.00015831%2021.7393%200.440277%2022.7994%201.32035%2023.6797C2.20059%2024.5599%203.26066%2025%204.50013%2025H19.5001C20.7395%2025%2021.7996%2024.5599%2022.6795%2023.6797C23.5597%2022.7994%2023.9998%2021.7394%2023.9998%2020.4999V5.49997C23.9998%204.26044%2023.5596%203.20026%2022.6796%202.32019ZM7.31257%2021.0936H3.70319V10.2498H7.31257V21.0936ZM6.98465%208.2422C6.60971%208.60159%206.11486%208.78132%205.50022%208.78132H5.48446C4.89077%208.78132%204.40917%208.60159%204.03927%208.2422C3.66931%207.8828%203.48444%207.43754%203.48444%206.9063C3.48444%206.36466%203.67467%205.91666%204.05476%205.56241C4.43511%205.20827%204.92722%205.03112%205.5313%205.03112C6.13544%205.03112%206.61983%205.20827%206.98448%205.56241C7.34902%205.91666%207.53657%206.36466%207.54692%206.9063C7.54686%207.43732%207.35959%207.88258%206.98465%208.2422ZM20.297%2021.0936H16.6876V15.2968C16.6876%2013.6616%2016.0836%2012.8438%2014.8752%2012.8438C14.4169%2012.8438%2014.0313%2012.9714%2013.7189%2013.2266C13.4062%2013.4817%2013.1719%2013.7916%2013.0158%2014.1565C12.9428%2014.3438%2012.9064%2014.6354%2012.9064%2015.0311V21.0935H9.29705C9.3283%2014.552%209.3283%2010.9373%209.29705%2010.2497H12.9064V11.7807C13.6653%2010.5941%2014.743%209.99961%2016.1409%209.99961C17.3909%209.99961%2018.3962%2010.4112%2019.1566%2011.2339C19.917%2012.0569%2020.2972%2013.2706%2020.2972%2014.8743V21.0936H20.297Z'%20fill='%23F2F2F2'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt="Linkedin Account Link"
+                  width="24"
+                  height="24"
+                />
               </a>
               <a href="#">
-                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0)'%3e%3cpath%20d='M23.6796%200.320191C22.7998%20-0.559882%2021.7397%20-1%2020.5002%20-1H5.50013C4.26066%20-1%203.20059%20-0.559882%202.32035%200.320191C1.44028%201.20043%201.00016%202.26044%201.00016%203.49997V18.4999C1.00016%2019.7393%201.44028%2020.7994%202.32035%2021.6797C3.20059%2022.5599%204.26066%2023%205.50013%2023H20.5001C21.7395%2023%2022.7996%2022.5599%2023.6795%2021.6797C24.5597%2020.7994%2024.9998%2019.7394%2024.9998%2018.4999V3.49997C24.9998%202.26044%2024.5596%201.20026%2023.6796%200.320191ZM19.3595%208.23444C19.3699%208.32819%2019.3752%208.46856%2019.3752%208.65639C19.3752%209.53143%2019.2475%2010.409%2018.9924%2011.289C18.7373%2012.1694%2018.3466%2013.0131%2017.8204%2013.8204C17.2947%2014.6275%2016.6671%2015.3413%2015.938%2015.961C15.2087%2016.5805%2014.3339%2017.0756%2013.3128%2017.4451C12.2922%2017.8151%2011.1983%2018.0002%2010.0317%2018.0002C8.21937%2018.0002%206.5423%2017.5103%205.00058%2016.5315C5.25057%2016.5626%205.51113%2016.5783%205.78181%2016.5783C7.29229%2016.5783%208.65167%2016.1096%209.86005%2015.1718C9.15182%2015.1617%208.5189%2014.9431%207.96166%2014.5156C7.40426%2014.0885%207.01635%2013.5469%206.79755%2012.8907C7.06829%2012.9322%207.27138%2012.9529%207.40678%2012.9529C7.63592%2012.9529%207.90163%2012.9113%208.20361%2012.8282C7.44323%2012.6821%206.8027%2012.3049%206.28186%2011.6955C5.7609%2011.086%205.50051%2010.3908%205.50051%209.60958V9.57833C6.05244%209.83856%206.57328%209.97395%207.06293%209.98452C6.11499%209.34897%205.64105%208.43764%205.64105%207.25017C5.64105%206.66677%205.79199%206.11474%206.09409%205.59389C6.91691%206.60438%207.91711%207.41156%209.09403%208.0157C10.2711%208.61978%2011.5316%208.95849%2012.8753%209.03133C12.8233%208.83343%2012.7972%208.58333%2012.7972%208.28134C12.7972%207.37495%2013.1175%206.60165%2013.7582%205.96095C14.3987%205.32031%2015.1722%204.99988%2016.0783%204.99988C17.0369%204.99988%2017.8339%205.34374%2018.4692%206.03128C19.188%205.89588%2019.8862%205.63012%2020.5631%205.23444C20.3028%206.03631%2019.8181%206.64576%2019.1101%207.06245C19.787%206.96854%2020.417%206.79155%2021.0002%206.53116C20.5628%207.19779%2020.0157%207.76548%2019.3595%208.23444Z'%20fill='%23F2F2F2'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="Twitter Account Link" />
+                <img
+                  src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0)'%3e%3cpath%20d='M23.6796%200.320191C22.7998%20-0.559882%2021.7397%20-1%2020.5002%20-1H5.50013C4.26066%20-1%203.20059%20-0.559882%202.32035%200.320191C1.44028%201.20043%201.00016%202.26044%201.00016%203.49997V18.4999C1.00016%2019.7393%201.44028%2020.7994%202.32035%2021.6797C3.20059%2022.5599%204.26066%2023%205.50013%2023H20.5001C21.7395%2023%2022.7996%2022.5599%2023.6795%2021.6797C24.5597%2020.7994%2024.9998%2019.7394%2024.9998%2018.4999V3.49997C24.9998%202.26044%2024.5596%201.20026%2023.6796%200.320191ZM19.3595%208.23444C19.3699%208.32819%2019.3752%208.46856%2019.3752%208.65639C19.3752%209.53143%2019.2475%2010.409%2018.9924%2011.289C18.7373%2012.1694%2018.3466%2013.0131%2017.8204%2013.8204C17.2947%2014.6275%2016.6671%2015.3413%2015.938%2015.961C15.2087%2016.5805%2014.3339%2017.0756%2013.3128%2017.4451C12.2922%2017.8151%2011.1983%2018.0002%2010.0317%2018.0002C8.21937%2018.0002%206.5423%2017.5103%205.00058%2016.5315C5.25057%2016.5626%205.51113%2016.5783%205.78181%2016.5783C7.29229%2016.5783%208.65167%2016.1096%209.86005%2015.1718C9.15182%2015.1617%208.5189%2014.9431%207.96166%2014.5156C7.40426%2014.0885%207.01635%2013.5469%206.79755%2012.8907C7.06829%2012.9322%207.27138%2012.9529%207.40678%2012.9529C7.63592%2012.9529%207.90163%2012.9113%208.20361%2012.8282C7.44323%2012.6821%206.8027%2012.3049%206.28186%2011.6955C5.7609%2011.086%205.50051%2010.3908%205.50051%209.60958V9.57833C6.05244%209.83856%206.57328%209.97395%207.06293%209.98452C6.11499%209.34897%205.64105%208.43764%205.64105%207.25017C5.64105%206.66677%205.79199%206.11474%206.09409%205.59389C6.91691%206.60438%207.91711%207.41156%209.09403%208.0157C10.2711%208.61978%2011.5316%208.95849%2012.8753%209.03133C12.8233%208.83343%2012.7972%208.58333%2012.7972%208.28134C12.7972%207.37495%2013.1175%206.60165%2013.7582%205.96095C14.3987%205.32031%2015.1722%204.99988%2016.0783%204.99988C17.0369%204.99988%2017.8339%205.34374%2018.4692%206.03128C19.188%205.89588%2019.8862%205.63012%2020.5631%205.23444C20.3028%206.03631%2019.8181%206.64576%2019.1101%207.06245C19.787%206.96854%2020.417%206.79155%2021.0002%206.53116C20.5628%207.19779%2020.0157%207.76548%2019.3595%208.23444Z'%20fill='%23F2F2F2'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                  alt="Twitter Account Link"
+                  width="24"
+                  height="24"
+                />
               </a>
             </div>
           </div>
@@ -272,7 +327,7 @@
             <form class="js-join-form" action="#">
               <label class="custom-input__label">
                 Want us to contact you?
-                <div class="custom-email-input">
+                <span class="custom-email-input">
                   <input
                     name="email"
                     type="email"
@@ -280,7 +335,7 @@
                     placeholder="Email"
                   />
                   <button class="bg-blue" type="submit">Join</button>
-                </div>
+                </span>
               </label>
             </form>
           </div>
@@ -297,7 +352,7 @@
             <span class="material-icons"> close </span>
           </button>
         </div>
-        <nav id="menu-nav" class="menu-nav">
+        <nav id="menu-nav" class="menu-nav" aria-label="menu-nav">
           <ul id="menu-nav-list" class="nav-list menu-nav-list">
             <li><a href="#top-header">Home</a></li>
             <li><a href="#services">Services</a></li>
