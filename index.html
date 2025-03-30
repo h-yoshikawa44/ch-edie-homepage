@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&amp;family=Montserrat:ital,wght@0,700;1,700&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
       rel="stylesheet"
     />
   </head>
@@ -29,7 +29,11 @@
       <header id="top-header" class="top-header">
         <div class="outside-container top-header__layout">
           <h1 class="top-header__site-title">Edie</h1>
-          <nav id="top-header-nav" class="top-header__nav">
+          <nav
+            id="top-header-nav"
+            class="top-header__nav"
+            aria-label="top-header-nav"
+          >
             <ul class="nav-list top-header__nav-list">
               <li><a href="#top-header">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -47,17 +51,22 @@
           </button>
         </div>
       </header>
-      <header class="hero-header">
-        <div class="hero-header__container">
-          <p class="hero-header__intro-text">Unhappy with your website?</p>
-          <em class="hero-header__em-text">
+      <div class="hero">
+        <div class="hero__container">
+          <p class="hero__intro-text">Unhappy with your website?</p>
+          <em class="hero__em-text">
             We create beautiful <br />and fast web services
           </em>
-          <p class="hero-header__img-block">
-            <img src="./images/heroImage.jpg" alt="" />
+          <p class="hero__img-block">
+            <img
+              src="./images/heroImage.jpg"
+              alt=""
+              width="1332"
+              height="354"
+            />
           </p>
-          <em class="hero-header__em-text">Story, emotion <br />and purpose</em>
-          <p class="hero-header__description">
+          <em class="hero__em-text">Story, emotion <br />and purpose</em>
+          <p class="hero__description">
             We help transform your ideas into real world applications that will
             outperform your toughest competition and help you achieve your
             strategic goals in short period of time.
@@ -65,7 +74,7 @@
           <form class="js-join-form" action="#">
             <label class="custom-input__label">
               Want us to contact you?
-              <div class="custom-email-input">
+              <span class="custom-email-input">
                 <input
                   name="email"
                   type="email"
@@ -73,11 +82,11 @@
                   placeholder="Email"
                 />
                 <button class="bg-blue" type="submit">Join</button>
-              </div>
+              </span>
             </label>
           </form>
         </div>
-      </header>
+      </div>
       <section id="services" class="service-section">
         <div class="inside-container">
           <h2 class="section-title">
@@ -91,7 +100,7 @@
               <span class="material-icons bg-blue service-card-list__card-icon">
                 edit
               </span>
-              <h4 class="service-card-list__card-title">UI/UX Design</h4>
+              <h3 class="service-card-list__card-title">UI/UX Design</h3>
               <p class="service-card-list__card-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
                 metus ac nulla consequat aliquet id quis turpis.
@@ -110,20 +119,18 @@
               >
                 code
               </span>
-              <h4 class="service-card-list__card-title">Front End</h4>
+              <h3 class="service-card-list__card-title">Front End</h3>
               <p class="service-card-list__card-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
                 metus ac nulla consequat aliquet id quis turpis.
               </p>
-              <a class="service-card-list__card-link" href="# ">
-                Get started
-              </a>
+              <a class="service-card-list__card-link" href="#"> Get started </a>
             </div>
             <div class="service-card-list__card">
               <span class="material-icons bg-red service-card-list__card-icon">
                 storage
               </span>
-              <h4 class="service-card-list__card-title">Back End</h4>
+              <h3 class="service-card-list__card-title">Back End</h3>
               <p class="service-card-list__card-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
                 metus ac nulla consequat aliquet id quis turpis.
@@ -150,23 +157,35 @@
               <img
                 src="./images/smarthome.jpg"
                 alt="Smart home dashboard Image"
+                width="534"
+                height="534"
               />
               <figcaption>
-                <i class="work-card-list__card-category"
-                  >Full stack application</i
-                >
-                <h4 class="work-card-list__card-title">Smart home dashboard</h4>
+                <i class="work-card-list__card-category">
+                  Full stack application
+                </i>
+                <h3 class="work-card-list__card-title">Smart home dashboard</h3>
               </figcaption>
             </figure>
             <figure class="work-card-list__card">
-              <img src="./images/onboard.png" alt="Onboard application Image" />
+              <img
+                src="./images/onboard.png"
+                alt="Onboard application Image"
+                width="545"
+                height="545"
+              />
               <figcaption>
                 <i class="work-card-list__card-category">UX/UI design</i>
                 <h4 class="work-card-list__card-title">Onboard application</h4>
               </figcaption>
             </figure>
             <figure class="work-card-list__card">
-              <img src="./images/booking.png" alt="Booking system Image" />
+              <img
+                src="./images/booking.png"
+                alt="Booking system Image"
+                width="534"
+                height="551"
+              />
               <figcaption>
                 <i class="work-card-list__card-category">Mobile application</i>
                 <h4 class="work-card-list__card-title">Booking system</h4>
@@ -176,11 +195,13 @@
               <img
                 src="./images/juice-product.png"
                 alt="Juice product homepage Image"
+                width="545"
+                height="546"
               />
               <figcaption>
-                <i class="work-card-list__card-category"
-                  >Front End applicati on</i
-                >
+                <i class="work-card-list__card-category">
+                  Front End applicati on
+                </i>
                 <h4 class="work-card-list__card-title">
                   Juice product homepage
                 </h4>
@@ -205,9 +226,30 @@
               </p>
             </div>
             <div class="team-section__team-member-img-list">
-              <p><img src="./images/person1.png" alt="" /></p>
-              <p><img src="./images/person2.png" alt="" /></p>
-              <p><img src="./images/person3.png" alt="" /></p>
+              <p>
+                <img
+                  src="./images/person1.png"
+                  alt=""
+                  width="260"
+                  height="260"
+                />
+              </p>
+              <p>
+                <img
+                  src="./images/person2.png"
+                  alt=""
+                  width="292"
+                  height="300"
+                />
+              </p>
+              <p>
+                <img
+                  src="./images/person3.png"
+                  alt=""
+                  width="320"
+                  height="320"
+                />
+              </p>
             </div>
           </div>
         </div>
@@ -225,13 +267,15 @@
                   class="client-quote-block__client-img"
                   src="./images/person4.png"
                   alt="Carlos Tran Image"
+                  width="246"
+                  height="246"
                 />
               </p>
               <div>
                 <p class="client-quote-block__client-name">Carlos Tran</p>
-                <small class="client-quote-block__client-role"
-                  >The Decorate Gatsby</small
-                >
+                <small class="client-quote-block__client-role">
+                  The Decorate Gatsby
+                </small>
               </div>
             </figcaption>
           </figure>
@@ -239,7 +283,7 @@
       </section>
       <footer id="footer" class="footer">
         <div class="inside-container footer-layout">
-          <nav id="footer-nav">
+          <nav id="footer-nav" aria-label="footer-nav">
             <ul class="nav-list footer__nav-list">
               <li><a href="#top-header">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -252,13 +296,28 @@
             <p class="footer__site-title">Edie</p>
             <div class="footer__social">
               <a href="#">
-                <img src="./icons/instagram.svg" alt="Instagram Account Link" />
+                <img
+                  src="./icons/instagram.svg"
+                  alt="Instagram Account Link"
+                  width="24"
+                  height="24"
+                />
               </a>
               <a href="#">
-                <img src="./icons/linkedin.svg" alt="Linkedin Account Link" />
+                <img
+                  src="./icons/linkedin.svg"
+                  alt="Linkedin Account Link"
+                  width="24"
+                  height="24"
+                />
               </a>
               <a href="#">
-                <img src="./icons/twitter.svg" alt="Twitter Account Link" />
+                <img
+                  src="./icons/twitter.svg"
+                  alt="Twitter Account Link"
+                  width="24"
+                  height="24"
+                />
               </a>
             </div>
           </div>
@@ -266,7 +325,7 @@
             <form class="js-join-form" action="#">
               <label class="custom-input__label">
                 Want us to contact you?
-                <div class="custom-email-input">
+                <span class="custom-email-input">
                   <input
                     name="email"
                     type="email"
@@ -274,7 +333,7 @@
                     placeholder="Email"
                   />
                   <button class="bg-blue" type="submit">Join</button>
-                </div>
+                </span>
               </label>
             </form>
           </div>
@@ -291,7 +350,7 @@
             <span class="material-icons"> close </span>
           </button>
         </div>
-        <nav id="menu-nav" class="menu-nav">
+        <nav id="menu-nav" class="menu-nav" aria-label="menu-nav">
           <ul id="menu-nav-list" class="nav-list menu-nav-list">
             <li><a href="#top-header">Home</a></li>
             <li><a href="#services">Services</a></li>
