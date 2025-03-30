@@ -18,8 +18,8 @@ pre-commit:
       stage_fixed: true
       skip:
         - merge
-    js-ts-fixer:
-      glob: 'js/*.{js,ts}'
+    js-fixer:
+      glob: 'js/*.js'
       run: |
         npx eslint --fix --quiet "{staged_files}"
       stage_fixed: true
