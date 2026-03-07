@@ -28,7 +28,7 @@
     "eslint": "^9.20.0",
     "gh-pages": "^6.3.0",
     "lefthook": "^1.10.10",
-    "markuplint": "^4.11.8",
+    "markuplint": "^4.14.1",
     "neostandard": "^0.12.1",
     "postcss": "^8.5.6",
     "postcss-load-config": "^6.0.1",
