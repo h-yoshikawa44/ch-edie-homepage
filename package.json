@@ -25,22 +25,19 @@
     "wicg-inert": "^3.1.3"
   },
   "devDependencies": {
-    "eslint": "^9.20.0",
+    "eslint": "^9.39.3",
     "gh-pages": "^6.3.0",
-    "lefthook": "^1.10.10",
-    "markuplint": "^4.11.8",
-    "neostandard": "^0.12.1",
-    "postcss": "^8.5.2",
+    "lefthook": "^2.1.1",
+    "markuplint": "^4.14.1",
+    "neostandard": "^0.12.2",
+    "postcss": "^8.5.6",
     "postcss-load-config": "^6.0.1",
-    "postcss-preset-env": "^10.1.3",
-    "prettier": "^3.5.0",
-    "stylelint": "^16.14.1",
-    "stylelint-config-recess-order": "^6.0.0",
-    "stylelint-config-standard": "^37.0.0",
-    "stylelint-order": "^6.0.4",
-    "vite": "^6.1.0"
-  },
-  "volta": {
-    "node": "22.13.1"
+    "postcss-preset-env": "^11.2.0",
+    "prettier": "^3.8.1",
+    "stylelint": "^17.4.0",
+    "stylelint-config-recess-order": "^7.6.1",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-order": "^7.0.1",
+    "vite": "^7.3.1"
   }
 }
